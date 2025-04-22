@@ -1,5 +1,8 @@
 package jp.co.aforce.javaexample;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
 public class test {
 	public static void example1(String[] args) {
 		int num = 10;
@@ -7,7 +10,8 @@ public class test {
 		example2();
 		example3();
 		example4();
-		
+		example5();
+		example6();
 }
 	
 	public static void example2() {
@@ -37,5 +41,18 @@ public class test {
 		String Scanner = "太郎";
 		System.out.println("こんにちは、" + Scanner + "さん");
 	}
+	
+	public static void example6() {
+		String name = "内田空音";
+		int age = 22;
+		LocalDate birthDate = LocalDate.of(2002, 11, 05);
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+		String formattedInfo =String.format("名前: %s, 年齢: %d歳, 誕生日: %s",name,age,birthDate.format(formatter));
+	}
+	
+	public static void example7() {
+		
+	}
+	
 
 }
