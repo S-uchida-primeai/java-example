@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
 public class test {
-	public static void example1(String[] args) {
+	public static void main(String[] args) {
 		int num = 10;
 		System.out.println(num);
 		example2();
