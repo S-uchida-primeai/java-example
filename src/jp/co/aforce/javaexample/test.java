@@ -1,7 +1,6 @@
 package jp.co.aforce.javaexample;
 
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
+import java.util.Scanner;
 
 public class test {
 	public static void main(String[] args) {
@@ -11,7 +10,7 @@ public class test {
 		example3();
 		example4();
 		example5();
-		example6();
+		
 }
 	
 	public static void example2() {
@@ -38,20 +37,11 @@ public class test {
 	}
 	
 	public static void example5() {
-		String Scanner = "太郎";
-		System.out.println("こんにちは、" + Scanner + "さん");
-	}
-	
-	public static void example6() {
-		String name = "内田空音";
-		int age = 22;
-		LocalDate birthDate = LocalDate.of(2002, 11, 05);
-		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
-		String formattedInfo =String.format("名前: %s, 年齢: %d歳, 誕生日: %s",name,age,birthDate.format(formatter));
-	}
-	
-	public static void example7() {
-		
+		Scanner scanner =new Scanner(System.in);
+		System.out.println("お名前を入力してください");
+		String name = scanner.nextLine();
+		System.out.println("こんにちは、" + name + "さん!");
+		scanner.close();
 	}
 	
 

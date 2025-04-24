@@ -1,7 +1,11 @@
 package jp.co.aforce.javaexample;
 
+
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Scanner;
+
+
 
 public class todaykadaiSample {
 	public static void main (String[]args) {
@@ -13,33 +17,48 @@ public class todaykadaiSample {
 		nameMap.put("バナナ", 120);
 		nameMap.put("いちご", 300);
 		
-		String key="りんご";
-		int value;
 		
-		if(key == "りんご") {
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		
+		System.out.print("購入する果物を入力してください:");
+		String key = scanner.nextLine();
+		
+		int value = nameMap.get(key);
+		
+		
+		scanner.close();
+		
+		if(key.equals( "りんご")) {
 			
-			value = nameMap.get(key);
+			
 			System.out.println(value);
 		
 		
 		
-		}else if (key =="みかん") {
+		}else if (key.equals("みかん")) {
 			
-			value = nameMap.get(key);
+			
 			System.out.println(value);
 			
-		}else if (key=="バナナ") {
+		}else if (key.equals("バナナ")) {
 			
-			value = nameMap.get(key);
+			
 			System.out.println(value);
 			
-		}else if (key=="いちご") {
-			value = nameMap.get(key);
+		}else if (key.equals("いちご")) {
+			
 			System.out.println(value);
 			
 		}else {
 			System.out.println("申し訳ありませんが、その商品は取り扱っておりません。");
 		}
+		
+		
+		
+		
+		
 	}
 
 }
