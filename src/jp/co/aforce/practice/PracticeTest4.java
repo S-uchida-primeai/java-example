@@ -13,6 +13,10 @@ public class PracticeTest4 {
 		animalsList.add("うさぎ");
 		animalsList.add("へび");
 		
+		/*ArrayListを使わずに簡単に書ける
+		 String[] animal = { "犬", "猫", "うさぎ", "へび" };
+		 */
+		
 		
 		//問題3
 		String element1 = animalsList.get(0);
@@ -29,6 +33,8 @@ public class PracticeTest4 {
 		
 		//問題4
 		
+		
+				
 		
 	}
 

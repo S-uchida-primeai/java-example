@@ -17,10 +17,16 @@ public class PracticeTest3 {
 		shouhinnList.add("クリップ");
 		shouhinnList.add("消しゴム");
 		
+		/*ArrayListを使わずに書ける
+		 String [] shouhinn = {"シャープペンシル", "ボールペン", "リングノート", "クリップ", "消しゴム"};
+		 */
+		
 		
 		//問題2
 		String element1 = shouhinnList.get(1);
 		System.out.println(element1);
+		
+		//System.out.println(shouhinnList.get(1));
 		
 		
 		//問題3
